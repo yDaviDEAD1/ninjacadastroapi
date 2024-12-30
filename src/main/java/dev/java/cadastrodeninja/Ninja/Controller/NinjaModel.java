@@ -2,13 +2,20 @@ package dev.java.cadastrodeninja.Ninja.Controller;
 
 import dev.java.cadastrodeninja.Missoes.MissoesModel;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.List;
+
 
 //Entity transforma uma classe em uma entidade do DB
 // Java Persistence API
 @Entity
 @Table(name = "tb_cadastro")
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+
 public class NinjaModel {
 
     @Id
